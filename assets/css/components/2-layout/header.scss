@@ -1,0 +1,108 @@
+.header {
+  padding: 32px 0;
+  position: relative;
+  z-index: 10;
+  .auto__container {
+    padding: 0 70px;
+    max-width: 1640px;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-buttons {
+      display: none;
+    }
+    &-logo {
+      width: 255px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+@mixin header-xxxxlg-xxxxxlg {
+  .header {
+    .auto__container {
+      padding: 0 50px;
+      max-width: 1500px;
+    }
+    &__inner {
+      &-logo {
+        width: 200px;
+      }
+    }
+  }
+}
+@mixin header-xxxlg-xxxxlg {
+  .header {
+    padding: 24px 0;
+    .auto__container {
+      padding: 0 40px;
+      max-width: 1320px;
+    }
+    &__inner {
+      &-logo {
+        width: 150px;
+      }
+    }
+  }
+}
+@mixin header-xlg-xxlg {
+  header {
+    .auto__container {
+      padding: 0 40px;
+    }
+  }
+}
+@mixin header-lg-xlg {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    background: $white;
+    &__inner {
+      &-buttons {
+        display: flex;
+        align-items: center;
+        .nav__inner-info {
+          width: unset;
+          position: static;
+          margin: 0 40px 0 0;
+          order: -1;
+
+        }
+      }
+    }
+  }
+}
+@mixin header-xsm-sm {
+  .header {
+    &__inner {
+      &-logo {
+        width: 120px;
+      }
+      &-buttons {
+        .nav__inner-info {
+          font-size: 12px;
+          margin: 0 20px 0 0;
+          a {
+            img {
+              width: 9px;
+              height: 9px;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+    .auto__container {
+      padding: 0 32px;
+    }
+  }
+}

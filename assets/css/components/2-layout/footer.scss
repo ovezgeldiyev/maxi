@@ -1,0 +1,92 @@
+.footer {
+  padding: 120px 0 90px 0;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    &-links {
+      display: flex;
+      align-items: center;
+      a {
+        display: block;
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 500;
+        color: $black;
+        text-decoration: underline;
+        margin-left: 35px;
+        @include transition;
+        &:first-child {
+          margin-left: 0;
+        }
+        &:hover {
+          color: $main;
+        }
+      }
+    }
+  }
+  .arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform;
+  }
+}
+@mixin footer-xxxxlg-xxxxxlg {
+  .footer {
+    padding: 100px 0 70px 0;
+  }
+}
+@mixin footer-xxxlg-xxxxlg {
+  .footer {
+    padding: 80px 0 50px;
+  }
+}
+@mixin footer-lg-xlg {
+  .footer {
+    &__inner {
+      flex-wrap: wrap;
+      p {
+        width: calc(50% - 10px);
+        order: 1;
+      }
+      &-links {
+        width: calc(50% - 10px);
+        order: 2;
+        justify-content: flex-end;
+      }
+    }
+    .arrow {
+      position: static;
+      order: 3;
+      @include transformReset;
+      margin: 20px auto 0 auto;
+    }
+  }
+}
+@mixin footer-md-lg {
+  .footer {
+    padding: 40px 0;
+    &__inner {
+      p {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        order: 4;
+      }
+      &-links {
+        width: 100%;
+        justify-content: center;
+        a {
+          margin: 0 10px;
+        }
+      }
+
+    }
+    .arrow {
+      order: 1;
+      margin: 0 auto 20px;
+    }
+  }
+}

@@ -1,0 +1,466 @@
+// 1900px
+@include xxxxxlg-xxxxxxlg {
+  .slogan {
+    &.big {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  @include intro-xxxxxlg-xxxxxxlg;
+}
+// 1660px
+@include xxxxlg-xxxxxlg {
+  // base start
+  h1,
+  h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  h3,
+  h4 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  h5 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  h6 {
+    font-size: 16px;
+    line-height: 28px;
+    &.sm {
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+  body {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  p {
+    &.sm {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+  .arrow {
+    width: 54px;
+    height: 54px;
+  }
+  .auto__container {
+    padding: 0 100px;
+    max-width: 1400px;
+  }
+  @include header-xxxxlg-xxxxxlg;
+  @include nav-xxxxlg-xxxxxlg;
+  @include footer-xxxxlg-xxxxxlg;
+  // base end
+  // layout start
+  @include theme-xxxxlg-xxxxxlg;
+  @include tags-xxxxlg-xxxxxlg;
+  @include question-xxxxlg-xxxxxlg;
+  // layout end
+  // index start
+  @include review-xxxxlg-xxxxxlg;
+  @include feature-xxxxlg-xxxxxlg;
+  @include why-xxxxlg-xxxxxlg;
+  @include slogan-xxxxlg-xxxxxlg;
+  @include intro-xxxxlg-xxxxxlg;
+
+  // index end
+  // solution start
+  @include solution-xxxxlg-xxxxxlg;
+  @include cards-xxxxlg-xxxxxlg;
+  // solution end
+}
+// 1480px
+@include xxxlg-xxxxlg {
+  // base start
+  .auto__container {
+    max-width: 1240px;
+    padding: 0 80px;
+  }
+  h3,
+  h4 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  @include header-xxxlg-xxxxlg;
+  @include nav-xxxlg-xxxxlg;
+  @include footer-xxxlg-xxxxlg;
+  // base end
+  // layout start
+  @include tags-xxxlg-xxxxlg;
+  @include question-xxxlg-xxxxlg;
+
+  // layout end
+  // index start
+  @include slogan-xxxlg-xxxxlg;
+  @include review-xxxlg-xxxxlg;
+  @include intro-xxxlg-xxxxlg;
+
+  // index end
+  // solution start
+  @include solution-xxxlg-xxxxlg;
+  // solution end
+  // package start
+  @include package-xxxlg-xxxxlg;
+  // package end
+}
+// 1340px
+@include xxlg-xxxlg {
+  // base start
+  .button {
+    padding: 10px 20px;
+    svg {
+      margin-left: 10px;
+    }
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  // base end
+  // layout start
+  @include theme-xxlg-xxxlg;
+  @include question-xxlg-xxxlg;
+  @include tags-xxlg-xxxlg;
+  // layout end
+  // index start
+  @include review-xxlg-xxxlg;
+  @include why-xxlg-xxxlg;
+  // index end
+  // solution start
+  @include cards-xxlg-xxxlg;
+  // solution end
+  // care start
+  @include support-xxlg-xxxlg;
+  // care end
+  // report start
+  @include report-xxlg-xxxlg;
+  // report end
+  // about start
+  @include about-xxlg-xxxlg;
+  // about end
+  // system start
+  @include team-xxlg-xxxlg;
+  @include network-xxlg-xxxlg;
+  @include system-xxlg-xxxlg;
+  // system end
+}
+// 1180px
+@include xlg-xxlg {
+  // base start
+  .auto__container {
+    padding: 0 40px;
+  }
+  h1,
+  h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  h3,
+  h4 {
+    font-size: 24px;
+    line-height: 38px;
+  }
+  @include header-xlg-xxlg;
+  // base end
+  // index start
+  @include feature-xlg-xxlg;
+  @include why-xlg-xxlg;
+  @include slogan-xlg-xxlg;
+  @include review-xlg-xxlg;
+  @include intro-xlg-xxlg;
+  // index end
+  // layout start
+  @include theme-xlg-xxlg;
+  @include question-xlg-xxlg;
+  // layout end
+  // solution start
+  @include solution-xlg-xxlg;
+  @include cards-xlg-xxlg;
+  // solution end
+  // care start
+  @include support-xlg-xxlg;
+  // care end
+  // practice start
+  @include practice-xlg-xxlg;
+  // practice end
+  // report start
+  @include report-xlg-xxlg;
+  // report end
+  // package start
+  @include package-xlg-xxlg;
+  // package end
+  // system start
+  @include team-xlg-xxlg;
+  // system end
+}
+// 1024px
+@include lg-xlg {
+  // base start
+  h3,
+  h4 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .wrapper {
+    padding-top: 95.05px;
+  }
+  body {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    & {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+  @include header-lg-xlg;
+  @include footer-lg-xlg;
+  @include nav-lg-xlg;
+  // base end
+  // layout start
+  @include theme-lg-xlg;
+  @include tags-lg-xlg;
+  @include question-lg-xlg;
+  // layout end
+  // index start
+  @include intro-lg-xlg;
+  @include review-lg-xlg;
+  @include why-lg-xlg;
+  // index end
+  // solution start
+  @include solution-lg-xlg;
+  @include partner-lg-xlg;
+  // solution end
+  // care start
+  @include support-lg-xlg;
+  // care end
+  // practice start
+  @include practice-lg-xlg;
+  // practice end
+  // report start
+  @include report-lg-xlg;
+  // report end
+  // about start
+  @include about-lg-xlg;
+  // about end
+  // system start
+  @include team-lg-xlg;
+  @include network-lg-xlg;
+  @include system-lg-xlg;
+  // system end
+  // package start
+  @include package-lg-xlg;
+  // package end
+}
+// 840px
+@include md-lg {
+  // base start
+  .auto__container {
+    padding: 0 30px;
+  }
+  h6 {
+    &.sm {
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+  p {
+    &.sm {
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+  @include footer-md-lg;
+
+  // base end
+  // layout start
+  @include theme-md-lg;
+  @include tags-md-lg;
+  @include question-md-lg;
+  // layout end
+  // index start
+  @include feature-md-lg;
+  @include why-md-lg;
+  @include intro-md-lg;
+  @include review-md-lg;
+  // index end
+  // solution start
+  @include solution-md-lg;
+  @include partner-md-lg;
+  // solution end
+  // care start
+  @include support-md-lg;
+  // care end
+  // practice start
+  @include practice-md-lg;
+  // practice end
+  // about start
+  @include about-md-lg;
+  // about end
+  // system start
+  @include team-md-lg;
+  @include network-md-lg;
+  @include system-md-lg;
+  // system end
+  // package start
+  @include package-md-lg;
+  // package end
+}
+// 700px
+@include sm-md {
+  // layout start
+  h1,
+  h2 {
+    font-size: 28px;
+  }
+  .input {
+    input,
+    select,
+    textarea {
+      font-size: 15px;
+      padding: 20px 25px;
+      border-radius: 15px;
+    }
+    span {
+      width: 7px;
+      height: 7px;
+      right: 25px;
+    }
+  }
+  .check {
+    padding: 20px 25px;
+    border-radius: 15px;
+    &__box {
+      width: 20px;
+      height: 20px;
+      margin-right: 15px;
+      span {
+        border-width: 2px;
+      }
+    }
+    p {
+      width: calc(100% - 35px);
+    }
+  }
+  // layout end
+
+  // layout start
+  @include theme-sm-md;
+  @include question-sm-md;
+  @include tags-sm-md;
+  // layout end
+  // index start
+  @include intro-sm-md;
+  // index end
+  // care start
+  @include support-sm-md;
+  // care end
+  // report start
+  @include report-sm-md;
+  // report end
+  // about start
+  @include about-sm-md;
+  // about end
+  // system start
+  @include team-sm-md;
+  @include network-sm-md;
+  @include system-sm-md;
+  // system end
+  // package start
+  @include package-sm-md;
+  // package end
+}
+// 540px
+@include xsm-sm {
+  .input {
+    input,
+    select,
+    textarea {
+      font-size: 13px;
+      padding: 16px;
+      border-radius: 10px;
+    }
+    span {
+      width: 6px;
+      height: 6px;
+      right: 16px;
+      border-width: 1.5px;
+    }
+  }
+  .check {
+    padding: 16px;
+    border-radius: 10px;
+    &__box {
+      width: 16px;
+      height: 16px;
+      margin-right: 10px;
+    }
+    p {
+      width: calc(100% - 26px);
+      font-size: 13px;
+    }
+  }
+  // base start
+  .wrapper {
+    padding-top: 85.64px;
+  }
+  .modall {
+    padding: 25px;
+    &__inner {
+      padding: 60px 35px 40px;
+      min-height: unset;
+      border-radius: 30px;
+      &-close {
+        top: 15px;
+        right: 20px;
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+  @include header-xsm-sm;
+  @include nav-xsm-sm;
+
+  // base end
+  // layout start
+  @include theme-xsm-sm;
+  @include tags-xsm-sm;
+  @include question-xsm-sm;
+
+  // layout end
+  // index start
+  @include feature-xsm-sm;
+  @include why-xsm-sm;
+  @include slogan-xsm-sm;
+  @include review-xsm-sm;
+  @include intro-xsm-sm;
+  // index end
+  // solution start
+  @include solution-xsm-sm;
+  @include cards-xsm-sm;
+  @include partner-xsm-sm;
+  // solution end
+  // care start
+  @include support-xsm-sm;
+  // care end
+  // practice start
+  @include practice-xsm-sm;
+  // practice end
+  // report start
+  @include report-xsm-sm;
+  // report end
+  // about start
+  @include about-xsm-sm;
+  // about end
+  // system start
+  @include team-xsm-sm;
+  @include network-xsm-sm;
+  @include system-xsm-sm;
+  // system end
+  // package start
+  @include package-xsm-sm;
+  // package end
+}
